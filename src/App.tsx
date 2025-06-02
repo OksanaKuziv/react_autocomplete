@@ -61,7 +61,6 @@ export const App: React.FC = () => {
               value={query}
               onChange={handleInputChange}
               onFocus={() => setDropdownIsShown(true)}
-              onBlur={() => setDropdownIsShown(false)}
             />
           </div>
           {dropdownIsShown && filteredPeople.length > 0 && (
